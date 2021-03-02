@@ -1,0 +1,18 @@
+$colors:(
+primary: rgb(255, 255,255),
+button: #333,
+
+
+);
+
+@function color($color-name){ 
+    @return map-get($colors, $color-name )
+};
+    
+html,
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
