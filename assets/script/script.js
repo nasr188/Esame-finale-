@@ -18,7 +18,7 @@ info.forEach(data => {
      <button>leggi di più</button>
      <div id="oltre">
      <ul>
-         <li></li>
+         <li>${data.ingredienti[1]}</li>
      </ul>
      <div>
          <h1>passi per preparare </h1>
@@ -35,6 +35,11 @@ info.forEach(data => {
 parent.innerHTML = output
     
   });
+
+
+
+
+
 
 
   
