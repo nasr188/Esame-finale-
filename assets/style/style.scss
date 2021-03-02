@@ -1,8 +1,8 @@
 $colors:(
 primary: rgb(255, 255,255),
-button: #333,
-
-
+back: #333,
+back2: lightgray,
+danger: red
 );
 
 @function color($color-name){ 
@@ -15,4 +15,33 @@ body{
     padding: 0;
     width: 100%;
     box-sizing: border-box;
+}
+
+body{
+    #logo{
+background-color: color(back2);
+display: flex;
+flex-flow: row wrap;
+align-items: center;
+box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+.logo-inf{
+    h2,h3{
+    color: color(button);
+    margin-left: 8px;
+    font-family: sans-serif;
+
+}
+}
+h1{
+   margin-left: 29%; 
+   color:color(danger);
+   text-transform: uppercase;
+  
+    
+}
+    }
+    h4{
+        text-align: center;
+        color:color(danger);
+    }
 }
