@@ -20,12 +20,7 @@ info.forEach(data => {
      <ul>
          <li>${data.ingredienti[1]}</li>
      </ul>
-     <div>
-         <h1>passi per preparare </h1>
-         <ol>
-             <li></li>
-         </ol>
-     </div>
+     
  </div>
  </div>`
     
@@ -34,7 +29,7 @@ info.forEach(data => {
 });
 parent.innerHTML = output
     
-  });
+  }).catch(err => console.error(err));
 
 
 
